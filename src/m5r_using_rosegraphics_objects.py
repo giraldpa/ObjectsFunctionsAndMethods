@@ -17,13 +17,13 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #     a. For the RoseGraphics coordinate system:todd.draw_square(50)
 #
 #        -- Where is the (0, 0) point on the screen?
-#              in the middle of the screen
+#              in the top right corner
 #
 #        -- In what direction on the screen does the positive X-axis point?
 #              Right
 #
 #        -- In what direction on the screen does the positive Y-axis point?
-#              up
+#              down
 #
 #     b. Write a line of code that constructs a basic RoseWindow object:
 #            window = rg.RoseWindow()

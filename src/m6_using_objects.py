@@ -15,7 +15,7 @@ def main():
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
     two_circles()
-
+    circle_and_rectangle()
 
 def two_circles():
     """
@@ -35,13 +35,18 @@ def two_circles():
     #    (by calling this function).
     # ------------------------------------------------------------------
 
-    window = rg.RoseWindow()
-    center_point = rg.Point(0,0)
-    circle = 
+    window = rg.RoseWindow(500,500)
+
+    center_point = rg.Point(200, 200)
+    circle = rg.Circle(center_point, 80)
+    circle.fill_color = "green"
+
+    circle1 = rg.Circle(center_point, 40)
     circle.attach_to(window)
+    circle1.attach_to(window)
+    window.render()
 
-
-    window.close_on_mouse_click()
+    #window.close_on_mouse_click()
 
 def circle_and_rectangle():
     """
@@ -84,6 +89,24 @@ def circle_and_rectangle():
     #       instance variables for outline thickness, etc.
     # ------------------------------------------------------------------
 
+    window = rg.RoseWindow(500, 500)
+
+    center_point = rg.Point(350, 350)
+    circle = rg.Circle(center_point, 30)
+    circle.fill_color = "blue"
+    circle.attach_to(window)
+
+    point1 = rg.Point(100, 100)
+    point2 = rg.Point(200, 300)
+    rectangle = rg.Rectangle(point1, point2)
+    rectangle.attach_to(window)
+    window.render()
+
+    print(rectangle)
+    print(circle)
+
+    window.close_on_mouse_click()
+
 
 def lines():
     """
@@ -111,6 +134,10 @@ def lines():
     # TODO: 4. Implement and test this function.
     # ------------------------------------------------------------------
 
+    window = rg.RoseWindow(500, 500)
+
+    line1 = rg.Line(20, 100)
+    line2 = rg.Line()
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
